@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/daf0bbb87b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+
+    <header class="encabezado">
+        <nav class="nav">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <div class="iconos">
+            <span class="material-symbols-outlined">search</span>
+            <span class="material-symbols-outlined">person</span>
+        </div>
+    </header>
+
+
+    <div class="background"></div>
+
+    <section class="marco">
+        <div class="titulo">
+            <h2 id="bienvenida"></h2>
+        </div>
+        
+        <div class="contenido">
+        
+            <p></p>
+            
+            <a id="aSaldo" href="#" class="mostrar-enlace" data-target="consultarSaldo"><span class="material-symbols-outlined">payments</span>     Consulta tu saldo</a>
+
+            
+            <a href="#" class="mostrar-enlace" data-target="ingresarSaldo"><span class="material-symbols-outlined">add_shopping_cart</span>    Ingresar monto</a>
+            
+            
+            <a href="#" class="mostrar-enlace" data-target="retirarSaldo"><span class="material-symbols-outlined">shopping_cart_checkout</span>     Retirar monto</a>
+
+        </div>
+        
+        <!-- secciones para mostrar u ocultar -->
+    <div class="acciones">
+        <div id="consultarSaldo" class="oculto">
+            <p id="psaldo"></p>
+
+
+
+        </div>
+        <div id="ingresarSaldo" class="oculto">
+            <input type="text" name="suma" id="suma">
+            <button type="submit" id="suma">Ingresar</button>
+            
+            
+        </div>
+        <div id="retirarSaldo" class="oculto">
+            <input type="text" name="suma" id="suma">
+            <button type="submit" id="resta">Retirar</button>
+            
+
+
+
+        </div>
+    </div>
+
+    </section>
+
+    <script src="./banco.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.encabezado{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 99;
+    background: transparent;
+}
+
+.encabezado .nav a{
+    text-decoration: none;
+    color: #fff; 
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.nav a:hover{
+    border-bottom: 4px solid #fff;
+    transition: .5s;
+}
+
+.iconos span{
+    color: #fff;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Imagenes/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.formulario{
+    position: absolute;
+    top: 23%;
+    left: 16%;
+    transform: translate(10%,0%);
+    background-position: center;
+    background-size:cover;
+    backdrop-filter: blur(10px);
+    background: transparent;
+    justify-content: space-around;
+    display: grid;
+    width: 750px;
+    height: 360px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 60px 250px;
+    
+}
+
+.titulo h2{
+    font-size: 36px;
+}
+
+.contenido p, h2{
+    color: #fff;
+    font-size: 20px;
+}
+
+.titulo{
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    padding-top: 10px;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iniciaSesion h2{
+    padding: 20px;
+}
+
+.iniciaSesion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.iniciaSesion .entrada .entrada1{
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    height: 100%;
+}
+
+::placeholder{
+    color: #fff;
+    font-size: 18px;
+}
+
+.iniciaSesion span{
+    color: #fff;
+}
+.iniciaSesion .ingresar{
+    width: 300px;
+    height: 40px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.botonIngresar{
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 7px;
+    color: black;
+}
+
+button:active{
+    font-size: 25px;
+    size: 10%;
+}
